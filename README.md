@@ -1,7 +1,7 @@
 # brancher
 Create branch names from Jira ticket URL
 ``` 
-ticket/ABC-123-ticket-title-slug
+ticket/abc-123-ticket-title-slug
 ```
 It is a demonstration of how to add content to a page via chrome extension content-script. 
 
