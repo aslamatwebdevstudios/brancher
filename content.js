@@ -45,14 +45,16 @@ setTimeout(() => {
       div.id = "brancher-content";
       target.appendChild(div);
       if (tiketTitle) {
-        title = `ticket/${ticket}-${slugify(tiketTitle.textContent)}`.toLocaleLowerCase();
+        title = `feature/${ticket}-${slugify(tiketTitle.textContent)}`.toLocaleLowerCase();
         div.innerHTML = `<span id="branch-name-text" style="display:inline-block; user-select:all; background-color:#ccc; padding:5px; border-radius:5px;color: #000; margin-left: 20px;">${title}</span>`;
       }
     }
   }
 
   var branchNameText = document.querySelector('#branch-name-text');
-  branchNameText.addEventListener('click', function() {
-    copyToClipboard(branchNameText.innerText);
-  });
+  if(branchNameText) {
+    branchNameText.addEventListener('click', function() {
+      copyToClipboard(branchNameText.innerText);
+    });
+  }
 },3000);
