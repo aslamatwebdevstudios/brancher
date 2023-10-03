@@ -20,8 +20,10 @@ const copyToClipboard = ( copyText ) => {
 
 setTimeout(() => {
   const tiketTitle = document.querySelector(
-    "*[data-test-id='issue.views.issue-base.foundation.summary.heading']"
+    "*[data-testid='issue.views.issue-base.foundation.summary.heading']"
   );
+
+  console.log({tiketTitle});
 
   let target = document.querySelector(
     "*[data-testid='create-button-wrapper']"
