@@ -23,8 +23,6 @@ setTimeout(() => {
     "*[data-testid='issue.views.issue-base.foundation.summary.heading']"
   );
 
-  console.log({tiketTitle});
-
   let target = document.querySelector(
     "*[data-testid='create-button-wrapper']"
   );
